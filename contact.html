@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact me (meeee)</title>
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="css/navToggle.css" rel="stylesheet">
+        
+        <script src="js/contact.js"></script>
+        <script src="js/navToggle.js" href="text/javascript" defer></script>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="downloads/paper-background.jpg" id="backgroundImg" alt="A crumpled paper background">
+        <header>contact me!</header>
+        <nav>
+            <img src="downloads/navToggle.png" id="openNavButton" onclick="openNav()" alt="≡">
+            <div id="navCard">
+                <a href="index.html" class="navLinks" target="_blank">home</a>
+                <a href="contact.html" class="navLinks" target="_blank">contact</a>
+                <a href="artworks.html" class="navLinks" target="_blank">artworks</a>
+                <a href="sketches.html" class="navLinks" target="_blank">sketches</a>
+                <a href="misc.html" class="navLinks" target="_blank">miscellaneous</a>
+                <a href="biography.html" class="navLinks" target="_blank">biography</a>
+            </div>
+            <img src="downloads/closeNavButton.png" id="closeNavButton" alt="X">
+        </nav>
+        <form>
+            <section id="contacterDetails">
+                <section class="name">
+                    <label for="name">what's your name?</label>
+                    <input type="text" id="name" name="name" placeholder="(you can type here...)">
+                </section>
+
+                <section class="email"> 
+                    <label for="email">can i have your email?</label>
+                    <input type="email" id="email" name="email" placeholder="(abcdef@ghi.com)">
+                </section>
+
+                <section class="subject">
+                    <label for="subject">subject of writing:</label>
+                    <input id="subject" name="subject" placeholder="(comment, complaint)">
+                </section>
+            </section>
+
+            <section class="rightHalf">  <!-- elon musk has had better naming conventions -->
+                <label for="comment">what should i know?</label>
+                <textarea id="comment" name="comment" cols="45" rows="8"></textarea>
+                                
+                <p id="submit" onclick="showSocialAnxiety()">✓ submit</p>
+            </section>
+
+        </form>
+    </body>
+</html>

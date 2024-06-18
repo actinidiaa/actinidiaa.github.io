@@ -1,0 +1,11 @@
+All images were made by me, except for the paper background to the website.
+
+Works Cited:
+
+    MozDevNet. (2023a, January 13). transition-timing-function. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function 
+    MozDevNet. (2023b, May 13). aspect-ratio. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio 
+    MozDevNet. (2023c, October 19). transition-duration. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration 
+    MozDevNet. (2024a, January 24). box-shadow. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow 
+    MozDevNet. (2024b, June 5). filter. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/filter 
+    MozDevNet. (2024c, June 5). setTimeout() global function. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/setTimeout 
+    olhovyi_photographer. (n.d.). Crumpled white paper texture as a background image. Paper for design with copy space for text or image. Top view. Copy, empty space for text. freepik. Retrieved 2024,. 

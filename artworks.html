@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>complete artworks</title>
+
+        <!-- stylesheets -->
+        <link href="css/galleries.css" rel="stylesheet">
+        <link href="css/navToggle.css" rel="stylesheet">
+        
+        <!-- scripts -->
+        <script src="js/artworks.js" href="text/javascript" defer></script>
+        <script src="js/infoPopUp.js" href="text/javascript" defer></script>
+        <script src="js/narrationBoxPopUp.js" href="text/javascript" defer></script>
+        <script src="js/randomPlacement.js" href="text/javascript" defer></script>
+        <script src="js/navToggle.js" href="text/javascript" defer></script>
+        <script src="js/enlargeImages.js" href="text/javascript" defer></script>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="downloads/paper-background.jpg" id="backgroundImg" alt="A crumpled paper background">
+        <header>
+            <img src="downloads/artworksTitle.png" width="500px" id="titleImg" alt="Artworks (i)">
+            <div id="infoButton" onclick="showPageDescription()"></div>
+        </header>
+        <nav>
+            <img src="downloads/navToggle.png" id="openNavButton" onclick="openNav()" alt="≡">
+            <div id="navCard">
+                <a href="index.html" class="navLinks" target="_blank">home</a>
+                <a href="contact.html" class="navLinks" target="_blank">contact</a>
+                <a href="artworks.html" class="navLinks" target="_blank">artworks</a>
+                <a href="sketches.html" class="navLinks" target="_blank">sketches</a>
+                <a href="misc.html" class="navLinks" target="_blank">miscellaneous</a>
+                <a href="biography.html" class="navLinks" target="_blank">biography</a>
+            </div>
+            <img src="downloads/closeNavButton.png" id="closeNavButton" alt="X">
+        </nav>
+        <section> <!-- only appears if infoButton is clicked -->
+            <div id="screenDarken"></div>
+            <div id="infoScreen">
+                <p>These are artworks (by at least one person's standard), completed works that I've putten a lot of effort into. A lot of them are old, though I do hope to add more in the future. Hover over any of the drawings for details about them, and click to enlarge.</p>
+                <p id="hideInfoButton" onclick="hideInfo()"><i>×  thanks for the info!</i></p>
+            </div>
+        </section>
+        <main>
+            <section id="columnOne" class="column">
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="in">
+                    <img src="downloads/artworks/elephant_pool_tube.jpg" class="images" id="img1" alt="An elephant in a pool tube">
+                </div>
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/lighting_practice.jpg" class="images" id="img2" alt="A girl holding a lantern">
+                </div>
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/setsuko.jpg" class="images" id="img3" alt="A boy holding a jar of fireflies">
+                </div>
+            </section>
+            <section id="columnTwo" class="column">
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/wisp.jpg" class="images" id="img4" alt="A cloaked girl holding a knife">
+                </div>
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/battle_giratina.jpg" class="images" id="img5" alt="Spear Pillar - Giratina Encounter">
+                </div>
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/dead_body.jpg" width="340px" class="images" id="img6" alt="A dead body with many stab wounds">
+                    <img src="downloads/unblurButton.png" width="340px" id="unblurButton" alt="Image blur">
+                </div>
+            </section>
+            <section id="columnThree" class="column">
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/CLN4U_Witnesses_Called.jpg" class="images" id="img7" alt="Two police officers saluting each other as one goes to the witness stand">
+                </div>
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/CLN4U_Defense_Team.jpg" class="images" id="img8" alt="The defense team of a Supreme Court Case">
+                </div>
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/artworks/CLN4U_Court_In_Session.jpg" class="images" id="img9" alt="The Supreme Court in session (mock trial)">
+                </div>
+            </section>
+            <img src="downloads/closeNavButton.png" id="closeImage" onclick="closeImage()" alt="X">
+        <figcaption id="narratorBox">
+                <img src="downloads/oc-narrator.png" id="narratorImg" alt="Author's self portrait">
+                <p id="narrationText"></p>
+        </figcaption>
+        </main>
+    </body>
+</html>

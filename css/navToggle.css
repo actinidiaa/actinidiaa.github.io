@@ -1,0 +1,64 @@
+nav {
+    position: absolute;
+    width: 17%;
+    height: 50%;
+    top: 1%;
+    left: 0;
+    box-shadow: 10px 10px 10px rgba();
+    z-index: 1;
+}
+
+#openNavButton {
+    position: absolute;
+    left: 7%;
+    width: 20%;
+    transition-duration: 0.5s;
+}
+
+#openNavButton:hover {
+    scale: 1.1;
+}
+
+#closeNavButton {
+    position: absolute;
+    top: 7%;
+    right: 500%;
+    width: 10%;
+    transition-duration: 0.5s;
+}
+
+#closeNavButton:hover {
+    scale: 1.1;
+}
+
+#navCard {
+    left: -500%;
+    background-color: rgb(255, 191, 71);
+    box-shadow: 5px 10px 5px rgba(90, 62, 9, 0.774);
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    overflow: auto;
+    transition-duration: 0.5s;
+}
+
+.navLinks {
+    position: relative;
+    left: 10%;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    display: block;
+    line-height: 1.5em;
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+    font-family: 'Nanum Pen Script';
+    font-size: 1.5em;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.navLinks:hover {
+    opacity: 1;
+    letter-spacing: 0.05em;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>complete artworks</title>
+
+        <!-- stylesheets -->
+        <link href="css/galleries.css" rel="stylesheet">
+        <link href="css/navToggle.css" rel="stylesheet">
+        
+        <!-- scripts -->
+        <script src="js/sketches.js" href="text/javascript" defer></script>
+        <script src="js/infoPopUp.js" href="text/javascript" defer></script>
+        <script src="js/narrationBoxPopUp.js" href="text/javascript" defer></script>
+        <script src="js/randomPlacement.js" href="text/javascript" defer></script>
+        <script src="js/navToggle.js" href="text/javascript" defer></script>
+        <script src="js/enlargeImages.js" href="text/javascript" defer></script>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="downloads/paper-background.jpg" id="backgroundImg" alt="A crumpled paper background">
+        <header>
+            <img src="downloads/sketchesTitle.png" width="500px" id="titleImg" alt="skethces (i)">
+            <div id="infoButton" onclick="showPageDescription()"></div>
+        </header>
+        <nav>
+            <img src="downloads/navToggle.png" id="openNavButton" onclick="openNav()" alt="≡">
+            <div id="navCard">
+                <a href="index.html" class="navLinks" target="_blank">home</a>
+                <a href="contact.html" class="navLinks" target="_blank">contact</a>
+                <a href="artworks.html" class="navLinks" target="_blank">artworks</a>
+                <a href="sketches.html" class="navLinks" target="_blank">sketches</a>
+                <a href="misc.html" class="navLinks" target="_blank">miscellaneous</a>
+                <a href="biography.html" class="navLinks" target="_blank">biography</a>
+            </div>
+            <img src="downloads/closeNavButton.png" id="closeNavButton" alt="X">
+        </nav>
+        <section> <!-- only appears if infoButton is clicked --> 
+            <div id="screenDarken"></div>
+            <div id="infoScreen">
+                <p>These are quick sketches - I have spent less time on them, but love them just as much. Hover over any of the pieces for my description, and click to enlarge.</p>
+                <p id="hideInfoButton" onclick="hideInfo()"><i>×  thanks for the info!</i></p>
+            </div>
+        </section>
+        <main>
+            <section id="columnOne" class="column">
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/sketches/cow_laser.jpg" class="images" id="img1" alt="Cow shooting a laser out of its stomach">
+                </div>
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/sketches/willshroom.jpg" class="images" id="img4" alt="Personified mushroom">
+                </div>
+            </section>
+            <section id="columnTwo" class="column">
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/sketches/gronch.jpg" class="images" id="img2" alt="A wrinkled grinch">
+                </div>
+            </section>
+            <section id="columnThree" class="column">
+                <div class="stickyNote">
+                    <img src="downloads/pin.png" class="pins" alt="pin">
+                    <img src="downloads/sketches/saul_breakdancing.jpg" class="images" id="img3" alt="Rendition of Saul Goodman breakdancing">
+            </section>
+            <img src="downloads/closeNavButton.png" id="closeImage" onclick="closeImage()" alt="X">
+        </main>
+        <figcaption id="narratorBox">
+                <img src="downloads/oc-narrator.png" id="narratorImg" alt="Author's self portrait">
+                <p id="narrationText"></p>
+        </figcaption>
+    </body>
+</html>
